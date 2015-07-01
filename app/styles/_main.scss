@@ -6,14 +6,14 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.darkInput {
+.dark-input {
 	@include border-radius(25px);
 	background-color: black;
 	max-width: 250px;
 	height: 50px;
 }
 
-.roundedButton {
+.rounded-button {
 	@include border-radius(8px);
 }
 
@@ -22,6 +22,23 @@ body {
     margin: 0 70px auto;
 }
 
-#loginContainer {
+.login-container {
 	margin-top: 35px;
+
+	input {
+		margin-top: 20px;
+	}
+
+	button {
+		margin-top: 40px;
+	}
+}
+
+.logo-img {
+	//using px since using % does not get displayed
+	height: 350px;
+	width: 250px;
+	background-image: url("../imgs/logo.svg");
+	background-repeat: no-repeat;
+  	display: inline-block;
 }
