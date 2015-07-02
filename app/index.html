@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css(app) styles/bundle.css -->
+        <!-- bootstrap cdn load -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- build:css(app) styles/bundle.css -->        
         <link rel="stylesheet" href="styles/bundle.css">
         <!-- endbuild -->
 </head>
@@ -16,6 +18,32 @@
 
     <!-- Add your site or application content here -->
     <div class="container" ng-view></div>
+
+    <div class="container login-container" ng-view>
+        
+        <!-- logo image -->
+        <div class="row">
+            <div class="col-xs-offset-2 col-sm-offset-4">
+                <div class="logo-img"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-2 col-sm-offset-4">
+                <!-- inputs: email - password -->
+                <input type="text" class="form-control dark-input" placeholder="enterprise ID">
+                <input type="password" class="form-control dark-input" placeholder="enterprise password">
+
+                <!-- LOGIN submit button -->
+                <div class="col-centered">
+                    <button class="btn btn-lg btn-info rounded-button">LOG IN</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
 
     <!-- build:js scripts/modules.js -->
     
@@ -49,6 +77,10 @@
     <script src="scripts/directives/directives.js"></script>
     <!-- yo:directives -->
     <!-- endbuild -->
+
+    <!-- jquery - bootstrap cdn script load -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>
