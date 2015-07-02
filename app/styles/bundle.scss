@@ -8,9 +8,8 @@
 @import "utils/mixins";
 @import "utils/variables";
 @import "main";
-@import "theme";
 
-@import "modules/login";
+@import "modules";
 
 // Auto imported modules (feature generator) DON'T DELETE "yo:" lines
 // yo:includeSass
