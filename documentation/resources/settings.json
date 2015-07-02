@@ -1,0 +1,39 @@
+{
+	"navigation": [
+		{
+			"title": "coding practices",
+			"items": [
+				{
+					"title": "coding styles",
+					"readmePath": "/coding-practices/coding-styles.md"
+				},
+				{
+					"title": "scss linter",
+					"readmePath": "/coding-practices/scss-linter.md"
+				},
+				{
+					"title": "style guide",
+					"readmePath": "/coding-practices/style-guide.md"
+				}
+			]
+		},
+		{
+			"title": "git",
+			"items": [
+				{
+					"title": "flow",
+					"readmePath": "/git/flow.md"
+				}
+			]
+		},
+		{
+			"title": "testing",
+			"items": [
+				{
+					"title": "end to end",
+					"readmePath": "/testing/end-to-end.md"
+				}
+			]
+		}
+	]
+}
