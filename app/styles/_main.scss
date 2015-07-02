@@ -1,44 +1,49 @@
-@import "variables";
-@import "mixins";
+
 
 body {
-    background-color: $darkGrey;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: $darkGrey;
 }
 
 .dark-input {
 	@include border-radius(25px);
 	background-color: black;
-	max-width: 250px;
-	height: 50px;
+	height: 60px;
 }
 
 .rounded-button {
 	@include border-radius(8px);
 }
 
-.col-centered {
-    float: none;
-    margin: 0 70px auto;
-}
-
 .login-container {
 	margin-top: 35px;
 
-	input {
-		margin-top: 20px;
-	}
+	.form-signin{
 
-	button {
-		margin-top: 40px;
+ 		  margin: auto;
+		  padding: 0px;
+		  display: inline-block;
+		  width: 100%;
+
+		.input-login {
+			margin-top: 20px;
+		}
+
+		.button-container{
+			text-align: center;
+			.button-login {
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+		}
 	}
 }
 
 .logo-img {
 	//using px since using % does not get displayed
-	height: 350px;
-	width: 250px;
+	height: 324px;
+	width: 242px;
 	background-image: url("../imgs/logo.svg");
-	background-repeat: no-repeat;
-  	display: inline-block;
+	margin: 0 auto 10px;
+    display: block;
 }

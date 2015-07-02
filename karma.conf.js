@@ -17,12 +17,12 @@ module.exports = function(config) {
         // list of files / patterns to load in the browser
         files: [
             // bower:js
-            'bower_components/es5-shim/es5-shim.js',
-            'bower_components/angular/angular.js',
-            'bower_components/json3/lib/json3.min.js',
-            'bower_components/angular-route/angular-route.js',
-            'bower_components/angular-touch/angular-touch.js',
-            'bower_components/lodash/dist/lodash.compat.js',
+            'app/bower_components/es5-shim/es5-shim.js',
+            'app/bower_components/angular/angular.js',
+            'app/bower_components/json3/lib/json3.min.js',
+            'app/bower_components/angular-route/angular-route.js',
+            'app/bower_components/angular-touch/angular-touch.js',
+            'app/bower_components/lodash/dist/lodash.compat.js',
             // endbower
             'node_modules/jasmine-expect/dist/jasmine-matchers.js',
             'app/scripts/{,*/}/*.js',

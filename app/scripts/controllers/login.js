@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('layoutExample')
-  .controller('LoginCtrl', function($scope) {
+  .controller('LoginCtrl', function() {
     
-    $scope.username = 'nicolas.villalonga';
-
+   
   });

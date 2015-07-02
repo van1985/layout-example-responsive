@@ -2,12 +2,15 @@
  * Main scss file to be pre-compiled
  */
 
+
+
 // global
-@import "mixins";
-@import "variables";
+@import "utils/mixins";
+@import "utils/variables";
 @import "main";
 @import "theme";
-@import "modules";
+
+@import "modules/login";
 
 // Auto imported modules (feature generator) DON'T DELETE "yo:" lines
 // yo:includeSass

@@ -1,0 +1,26 @@
+.login .login-container {
+  margin-top: 35px;
+}
+.login .login-container .logo-img {
+  height: 324px;
+  width: 242px;
+  background-image: url("../imgs/logo.svg");
+  margin: 0 auto 10px;
+  display: block;
+}
+.login .login-container .form-signin {
+  margin: auto;
+  padding: 0px;
+  display: inline-block;
+  width: 100%;
+}
+.login .login-container .form-signin .input-login {
+  margin-top: 20px;
+}
+.login .login-container .form-signin .button-container {
+  text-align: center;
+}
+.login .login-container .form-signin .button-container .button-login {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
