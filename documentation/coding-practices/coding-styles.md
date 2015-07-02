@@ -1,5 +1,88 @@
 # Coding Styles
 
+
+## Get Organized !!
+
+> Since a large AngularJS application has many components it's best to structure it in a directory hierarchy. There are two main approaches:
+
+* Creating high-level divisions by component types and lower-level divisions by functionality.
+
+In this way the directory structure will look like:
+
+```
+.
+├── app
+│   ├── app.js
+│   ├── controllers
+│   │   ├── home
+│   │   │   ├── FirstCtrl.js
+│   │   │   └── SecondCtrl.js
+│   │   └── about
+│   │       └── ThirdCtrl.js
+│   ├── directives
+│   │   ├── home
+│   │   │   └── directive1.js
+│   │   └── about
+│   │       ├── directive2.js
+│   │       └── directive3.js
+│   ├── filters
+│   │   ├── home
+│   │   └── about
+│   └── services
+│       ├── CommonService.js
+│       ├── cache
+│       │   ├── Cache1.js
+│       │   └── Cache2.js
+│       └── models
+│           ├── Model1.js
+│           └── Model2.js
+├── partials
+├── lib
+└── test
+```
+
+* Creating high-level divisions by functionality and lower-level divisions by component types.
+
+Here is its layout:
+
+```
+.
+├── app
+│   ├── app.js
+│   ├── common
+│   │   ├── controllers
+│   │   ├── directives
+│   │   ├── filters
+│   │   └── services
+│   ├── home
+│   │   ├── controllers
+│   │   │   ├── FirstCtrl.js
+│   │   │   └── SecondCtrl.js
+│   │   ├── directives
+│   │   │   └── directive1.js
+│   │   ├── filters
+│   │   │   ├── filter1.js
+│   │   │   └── filter2.js
+│   │   └── services
+│   │       ├── service1.js
+│   │       └── service2.js
+│   └── about
+│       ├── controllers
+│       │   └── ThirdCtrl.js
+│       ├── directives
+│       │   ├── directive2.js
+│       │   └── directive3.js
+│       ├── filters
+│       │   └── filter3.js
+│       └── services
+│           └── service3.js
+├── partials
+├── lib
+└── test
+```
+
+* The `app.js` file should contains route definitions, configuration and/or manual bootstrap (if required).
+
 ## Modules (or lack thereof)
 
 > It's common when starting out to hang everything off of the main module. This works fine when starting a small app, but it quickly becomes unmanageable.
@@ -89,9 +172,20 @@ app.config(function (
 });
 ```
 
-## Service Naming Conventions
+## Naming Conventions
 
-> The name of the services must be in camelCase and finish with 'Srv'. This helps to have a convention for all the services names in the app.
+> All the names of the app must be in camelCase.
+
+| Component | End | Example 
+| ------- | ---- | ------ | 
+| Controller | Ctrl | CardPromotionCtrl |
+| Services | Srv | CardPromotionSrv |
+| Api Services | SrvApi | CardPromotionSrvApi |
+| Filters | Fltr | CardPromotionFltr |
+
+** Directives: do not require postfixing **
+
+> Important: A "factory" is in fact a pattern/implementation, and shouldn't be part of the provider's name. All factories and services should be called "services". 
 
 ### Bad
 
@@ -105,13 +199,19 @@ angular.module('core.checkout').factory('cardpromotion',function(){
 angular.module('core.checkout').factory('CardPromotionSrv',function(){
 ```
 
-> The same happens for api services, must be in camelCase and finish with 'SrvApi'.
+## Components Defintion
+
+> Use array syntax for controller definitions:
 
 ### Example
 
 ```javascript
-angular.module('core.checkout').service('CardPromotionSrvApi', function(){
+module.controller('MyCtrl', ['dependency1', 'dependency2', ..., 'dependencyn', function (dependency1, dependency2, ..., dependencyn) {
+  //...body
+}]);
 ```
+
+> Using this type of definition avoids problems with minification. You can automatically generate the array definition from standard one using tools like ng-annotate (and grunt task grunt-ng-annotate). Use the original names of the controller's dependencies. This will help you produce more readable code:
 
 ## Controller bloat
 
