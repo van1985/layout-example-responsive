@@ -34,6 +34,9 @@
   background-image: url("../imgs/member.svg");
   margin: 14px 6px;
 }
+.cart .navbar-fixed-top {
+  margin-bottom: 200px;
+}
 .cart .cart-input {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -41,9 +44,6 @@
   border-radius: 0px;
   width: 100%;
   padding: 5px;
-}
-.cart .text-row {
-  margin-top: 50px;
 }
 .cart .stock-row {
   margin-bottom: 7px;

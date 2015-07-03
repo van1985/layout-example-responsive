@@ -32,6 +32,10 @@
 		margin: 14px 6px;
 	}
 
+	.navbar-fixed-top {
+		margin-bottom: 200px;
+	}
+
 
 
 	
@@ -40,10 +44,6 @@
 		@include border-radius(0px);
 		width: 100%;
 		padding: 5px;
-	}
-
-	.text-row {
-		margin-top: 50px;
 	}
 
 	.stock-row {
