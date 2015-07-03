@@ -1,0 +1,100 @@
+@import "utils/mixins";
+
+.cart {
+
+	background: white;
+
+	
+	//navbar top
+	.navbar-toggle {
+	  width: 67%;
+	  float: none;
+	  margin-left: 15px;
+	}
+
+	.logo-header {
+		@include display-img(37px, 37px, "../imgs/logo-header.svg");
+		margin: 6px 50px;
+	}
+
+	.icon-menu {
+		@include display-img(30px, 26px, "../imgs/menu.svg");
+		margin: 12px 5px;
+	}
+
+	.icon-search {
+		@include display-img(23px, 23px, "../imgs/search.svg");
+		margin: 14px 15px;
+	}
+
+	.icon-member {
+		@include display-img(20px, 23px, "../imgs/member.svg");
+		margin: 14px 6px;
+	}
+
+
+
+	
+	//cart content
+	.cart-input {
+		@include border-radius(0px);
+		width: 100%;
+		padding: 5px;
+	}
+
+	.text-row {
+		margin-top: 50px;
+	}
+
+	.stock-row {
+		margin-bottom: 7px;
+	}
+
+	.price-row{
+		margin-bottom: 7px;
+	}
+
+	.fulfillment-row {
+		margin-bottom: 7px;	
+	}
+
+	.add-item-row {
+
+		.add-item-btn {
+			width: 100%;
+		}
+	}
+
+	.select-options {
+		@include border-radius(7px);
+		height: 46px;
+	}
+
+	.add-item-btn {
+		@include border-radius(7px);	
+	}
+
+
+
+
+	//navbar bottom
+	.icon-products {
+		@include display-img(30px, 30px, "../imgs/nav_products.svg");
+	}
+
+	.icon-recap {
+		@include display-img(30px, 31px, "../imgs/nav_recap.svg");
+	}
+	
+	.icon-cart {
+		@include display-img(35px, 32px, "../imgs/nav_cart.svg");
+	}
+
+	.icon-payment {
+		@include display-img(33px, 22px, "../imgs/nav_payment.svg");
+	}
+
+	.icon-separation {
+		margin: 12px 20px;
+	}
+}
