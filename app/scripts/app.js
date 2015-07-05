@@ -19,6 +19,9 @@ angular.module('layoutExample', _mainModules )
             templateUrl: 'views/login.html',
             controller: 'LoginCtrl'
         })
+        .when('/cart', {
+            templateUrl: 'views/cart.html'
+        })
         .otherwise({
             redirectTo: '/login'
         });

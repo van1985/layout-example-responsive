@@ -8,3 +8,9 @@
   	-ms-border-radius: $radius;
 	border-radius: $radius;
 }
+
+@mixin display-img($width, $height, $url) {
+	width: $width;
+	height: $height;
+	background-image: url($url);
+}
