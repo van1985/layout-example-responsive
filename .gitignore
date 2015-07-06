@@ -17,6 +17,5 @@ app/scripts/services/environment-config.js
 .csslintrc
 .editorconfig
 .gitattributes
-.jshintrc
 .yogeneratorrc
 Procfile
