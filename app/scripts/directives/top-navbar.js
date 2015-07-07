@@ -3,7 +3,7 @@
 angular.module('Directives')
     .directive('topNavbar', function () {
     	return {
-    		restrict: 'E',
+    		restrict: 'C',
     		templateUrl: 'views/top-navbar.html'
     	};
     });
