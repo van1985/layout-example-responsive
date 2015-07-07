@@ -1,4 +1,5 @@
 @import "utils/mixins";
+@import "utils/variables";
 
 .cart {
 
@@ -88,7 +89,7 @@
 
 
 		.add-item-btn {
-			@include border-radius(7px);	
+			@include border-radius(7px);
 		}
 
 	}
@@ -97,7 +98,96 @@
 
 
 
-	
+	//side cart totals
+	.cart-side {
+
+		background: $greyBackground;
+		position: absolute;
+		width: 100%;
+		left: 0px;
+		height: 100%;
+
+		.subtotals {
+
+			margin-bottom: 40px;
+
+			.icon-info {
+				@include display-img(30px, 30px, "../imgs/info.svg");
+				margin: 20px 33px;
+			}			
+
+		}
+
+
+
+		.shopyourway {
+
+			.subtotal-division {
+				background-color: black;
+			}
+
+			.icon-shopyourway {
+				@include display-img(191px, 21px, "../imgs/syw_logo.svg");
+				margin: 20px 0px;
+			}
+
+			.icon-info {
+				@include display-img(30px, 30px, "../imgs/info.svg");
+				margin: 0;
+			}
+
+			.apply-coupon-section {
+
+				margin: 20px 0px;
+
+				.apply-coupon-input {
+					margin-left: -17px;
+				}
+
+				.apply-coupon-btn {
+					@include border-radius(15px);
+					border: 3px solid grey;
+					margin: -15px -34px;
+	  				height: 61px;
+	  				width: 125px;
+				}
+			}
+
+
+			.manage-coupon-btn {
+				@include border-radius(15px);
+				border: 3px solid grey;
+				height: 61px;
+				font-size: 16px;
+				margin-left: -7px;
+			}
+
+			.add-products-section {
+				
+				.actions-btn {
+					border: 3px solid black;
+				}
+
+				.add-prod-background {
+					@include border-radius(7px);
+					width: 67px;
+					height: 38px;
+					background-color: $blueBootstrap;
+
+
+					.icon-add-prod {
+						@include display-img(52px, 25px, "../imgs/add_product_wht.svg");			
+						margin-left: 5px;	
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+	//end side cart totals 
 
 
 
