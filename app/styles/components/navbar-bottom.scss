@@ -1,0 +1,26 @@
+//navbar bottom
+.bottom-navbar {
+
+
+	.icon-separation {
+		margin: 12px 20px;
+		
+		&.icon-products {
+			@include display-img(30px, 30px, "../imgs/nav_products.svg");
+		}
+
+		&.icon-recap {
+			@include display-img(30px, 31px, "../imgs/nav_recap.svg");
+		}
+		
+		&.icon-cart {
+			@include display-img(35px, 32px, "../imgs/nav_cart.svg");
+		}
+
+		&.icon-payment {
+			@include display-img(33px, 22px, "../imgs/nav_payment.svg");
+		}
+	}
+
+}
+//end navbar bottom

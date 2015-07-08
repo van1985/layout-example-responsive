@@ -12,5 +12,8 @@
 @import "modules";
 @import "modules/cart";
 
+@import "components/navbar-top";
+@import "components/navbar-bottom";
+
 // Auto imported modules (feature generator) DON'T DELETE "yo:" lines
 // yo:includeSass

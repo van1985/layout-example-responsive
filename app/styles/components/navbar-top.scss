@@ -1,0 +1,36 @@
+//navbar top
+.top-navbar {
+
+	.navbar-fixed-top {
+		margin-bottom: 200px;
+
+		.navbar-toggle {
+		  width: 67%;
+		  float: none;
+		  margin-left: 15px;
+		}
+
+		.logo-header {
+			@include display-img(37px, 37px, "../imgs/logo-header.svg");
+			margin: 6px 50px;
+		}
+
+		.icon-menu {
+			@include display-img(30px, 26px, "../imgs/menu.svg");
+			margin: 12px 5px;
+		}
+
+		.icon-search {
+			@include display-img(23px, 23px, "../imgs/search.svg");
+			margin: 14px 15px;
+		}
+			
+		.icon-member {
+			@include display-img(20px, 23px, "../imgs/member.svg");
+			margin: 14px 6px;
+		}
+
+	}
+
+}
+//end navbar top
