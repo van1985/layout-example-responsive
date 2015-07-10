@@ -1,8 +1,27 @@
 
+@import "utils/variables";
+//@import "utils/functions";
+
+//@import "base/reset";
+//@import "base/layout";
+//@import "base/typography";
+
+
+@media all and (max-width: 768px) {
+	@import "resources/ipad_img";
+	//@import "resources/ipad_fonts";
+}
+
+@media all and (min-width: 769px) {
+	@import "resources/ipod_img";
+	//@import "resources/ipod_fonts";
+}
+
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: $darkGrey;
+    padding: 50px 0px;
 }
 
 .dark-input {
