@@ -1,0 +1,19 @@
+<div class="container schedule">
+	<!-- iterate through flights array -->
+	<div ng-repeat="flight in flights">
+		<div class="row">
+			<div class="col-md-2">
+				<div>
+					<label>TAIL ###</label>
+					<p>{{flight.flights}} flights</p>
+				</div>
+			</div>
+
+			<div class="col-md-10">
+				<!-- include schedule directive to draw svg flight info -->
+				<schedule flight="flight"></schedule>
+			</div>
+		</div>
+	</div>
+		<hr>
+</div>

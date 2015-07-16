@@ -22,6 +22,10 @@ angular.module('layoutExample', _mainModules )
         .when('/cart', {
             templateUrl: 'views/cart.html'
         })
+        .when('/schedule', {
+            templateUrl: 'views/scheduleChart.html',
+            controller: 'ScheduleCtrl'
+        })
         .otherwise({
             redirectTo: '/login'
         });
